@@ -5,8 +5,6 @@ Template Name: Contact Page
 get_header();
 ?>
 <section>
-  <p>テst</p>  
-<?php echo do_shortcode('[contact-form-7 id="1917c30" title="コンタクトフォームテスト"]'); ?>
     <div class="contact_header brandcolor_bg">
         <div>
             <h1 class="title_03">お申し込みフォーム</h1>
@@ -16,7 +14,7 @@ get_header();
     <nav class="flex mt-2 ml-4" aria-label="Breadcrumb">
         <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
         <li class="inline-flex items-center">
-            <a href="./index.html" class="inline-flex items-center text-sm hover:text-blue-600 dark:hover:text-white">
+            <a href="<?php echo home_url(); ?>" class="inline-flex items-center text-sm hover:text-blue-600 dark:hover:text-white">
             Top
             </a>
         </li>
@@ -50,6 +48,7 @@ get_header();
     <br>
 </section>
 <!-- Form -->
+<?php echo do_shortcode('[contact-form-7 id="1917c30" title="コンタクトフォームテスト"]'); ?>
 <section class="contactform-grid flex flex-col"> 
     <!-- ご用件 -->
     <h2>ご用件</h2>
@@ -101,6 +100,6 @@ get_header();
         <input type="checkbox" class="form-radio ml-[30px] " name="radio-option" value="option1" onchange="toggleSubmitButton(this)">
         <span class="ml-[-1rem] consent text-[21px] py-4">個人情報保護方針に同意する</span>
     </label>
-    <button type="button" id="submitBtn" class="mx-auto"><img src="./image/btn_to_confirm.png" alt="" class="to-confirm"></button>
+    <button type="button" id="submitBtn" class="mx-auto"><img src="/wp-content/uploads/2024/06/btn_to_confirm.png" alt="" class="to-confirm"></button>
 </section>
 <?php get_footer(); ?>
