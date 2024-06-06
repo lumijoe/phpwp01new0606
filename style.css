@@ -1,0 +1,908 @@
+/*
+Theme Name: testthemenew
+Text Domain: testthemenew
+Theme URI:
+Description: 
+Author:KOJO TEST
+Author URI: 
+Version: 15.21.1
+Requires at least: 5.9
+Tested up to: 6.5
+Requires PHP: 5.6.0
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Lightning WordPress theme, Copyright (C) 2015-2024 Vektor,Inc.
+Lightning WordPress theme is licensed under the GPL.
+
+Lightning WordPress Theme bundles the following third-party resources:
+
+Font Awesome icon font, Copyright 2012 Fonticons, Inc.
+its fonts are licensed under the terms of the SIL OFL License 1.1, and its code is licensed under the terms of the MIT license
+Source: https://fontawesome.com/
+
+Bootstrap framework, Copyright 2011 Bootstrap Authors and Twitter, Inc.
+Bootstrap is licensed under the terms of the MIT license
+Source: https://getbootstrap.com/
+
+CSS Simple Tree Shaking
+CSS Simple Tree Shaking is licensed under the terms of the GNU General Public License v2 license
+Source: https://celtislab.net/
+*/
+
+/* style.css */
+@charset "UTF-8";
+
+/*================================= 
+  共通
+================================= */
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal;
+  min-height: 100vh;
+}
+
+.noto-sans-jp-thin {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.noto-sans-jp-semibold {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.noto-sans-jp-bold {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.nav-bottom-button {
+  display: none; /* 最初は非表示にする */
+}
+
+.text-orange {
+  color: #ff8000;
+}
+.text-orange-number {
+  font-weight: 700;
+  color: #ff8000;
+  font-size: 6rem;
+}
+.text-orange-textleft {
+  font-weight: 600;
+  color: #ff8000;
+  font-size: 53px;
+}
+.text-orange-textright {
+  font-weight: 600;
+  color: #ff8000;
+  font-size: 5.8rem;
+}
+.text-green {
+  color: #2fc996;
+}
+.text-greengreen {
+  color: #00a99d;
+}
+.text-mostgreen {
+  color: #183834;
+}
+.text-moregreen {
+  color: #30554c;
+}
+.text-thinblack {
+  color: #191919;
+}
+
+/*================================= 
+  header
+================================= */
+.header-inner {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 117px;
+}
+
+/*================================= 
+  hero
+================================= */
+
+.sectionHero {
+  background-image: url("../image/bgimg_hero_pc.jpg");
+  width: 100%;
+  height: 964px;
+  background-size: cover;
+  background-position: right bottom;
+  overflow: hidden;
+}
+.sectionHero2 {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: right bottom;
+  overflow: hidden;
+}
+.sectionHero-inner {
+  padding-top: 8%;
+  width: 760px;
+  padding-left: 5rem;
+}
+.ico-hero {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.herotitle-sp {
+  display: none;
+}
+
+/* titleタグ */
+/* title_03　about50pxFont */
+.title-big {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.sectionHero .title-big::after {
+  content: "";
+  display: block;
+  border-top: 1.5px solid #2fc996;
+  width: calc(740px);
+  margin-left: -5rem;
+  margin-top: 10px;
+  overflow-y: hidden;
+}
+.a-shadow {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 9999px;
+  transition: box-shadow 0.5s ease;
+}
+.a-shadow:hover {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+  transform: translate(3px);
+}
+.aside-shadow {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 8px 0px 0px 8px;
+  transition: box-shadow 0.5s ease;
+}
+.aside-shadow:hover {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+  transform: translate(3px);
+}
+.bfooter-shadow:hover {
+  transform: translate(3px);
+}
+.bfooter-shadow {
+  margin-bottom: -1px;
+}
+
+/*================================= 
+  nav
+================================= */
+.side-nav {
+  position: fixed;
+  top: 120px;
+  right: 0;
+}
+.footer-nav {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  display: hidden;
+}
+.hamburger-menu {
+  display: none;
+  width: 70px;
+  height: auto;
+  padding: auto;
+}
+/*================================= 
+  mobilenav
+================================= */
+.sectionMobilenav {
+  height: 100vh !important;
+  width: 100%;
+  display: flex;
+  flex-direction: col;
+  align-content: flex-start;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  background-color: rgba(128, 128, 128, 0.8);
+  position: absolute;
+  top: 0px;
+  position: fixed;
+  right: -100%;
+  transition: right 0.3s ease-in-out;
+  z-index: 50;
+}
+.btn-close {
+  padding: 4% 2% 3% 92%;
+}
+.mobile-logo {
+  padding-left: 11%;
+  padding-right: 11%;
+  width: 78%;
+  display: flex;
+  justify-content: center;
+}
+.mobilenav-box {
+  width: 67%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+  width: 80%;
+  margin-top: 0px;
+  padding-bottom: 30px;
+}
+.mobilenav-box li {
+  border-bottom: 2px solid #2fc996;
+  padding: 23px 0 5px 0;
+  font-size: 18px;
+}
+.mobilenav-box-telnumber {
+  font-size: 45px;
+}
+.mobilenav-box-information {
+  font-size: clamp(16px, 2.5vw, 90%);
+}
+
+/*================================= 
+  explain
+================================= */
+.sectionExplain {
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+.explain-sp {
+  display: none;
+}
+.title-explain-sp {
+  display: none;
+}
+
+/*================================= 
+  reason
+================================= */
+.sectionReason {
+  width: 100%;
+  background-image: url("../image/bgimg_reason_01.jpg");
+  height: auto;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+}
+.sectionReasonTitle::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 2px;
+  background: white;
+  position: absolute;
+  left: calc(50% - (10% / 2));
+  margin-top: 10px;
+}
+.reason-box {
+  width: min(1100px, 80%);
+}
+.reason-box li {
+  border-radius: 15px;
+  height: min(225px, auto);
+}
+
+.reason031 {
+  width: 20%;
+  height: auto;
+  background-image: url("../image/ico_reason_031.png");
+  background-repeat: no-repeat;
+  background-position: right 0px bottom -5px;
+}
+.reason032 {
+  width: 20%;
+  height: auto;
+  background-image: url("../image/ico_reason_032.png");
+  background-repeat: no-repeat;
+  background-position: right 0px bottom -5px;
+}
+.reason033 {
+  width: 20%;
+  height: auto;
+  background-image: url("../image/ico_reason_033.png");
+  background-repeat: no-repeat;
+  background-position: right 0px bottom -5px;
+}
+
+/*================================= 
+  fivefunction
+================================= */
+.sectionFivefunction {
+  max-width: 100%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-tight h1 {
+  color: #2fc996;
+  font-size: 36px;
+  vertical-align: top;
+  padding-left: 25px;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+}
+.container-tight h2 {
+  color: #30554c;
+  font-size: 38px;
+  margin-top: -15px;
+  padding-left: 25px;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+.container-tight p {
+  color: #191919;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.container-tight ul li {
+  color: #191919;
+  font-size: 18px;
+  text-indent: -20px !important;
+  padding-left: 20px !important;
+}
+.container-wide {
+  background-color: #ffffff;
+}
+.fivefunction-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 38% 54%;
+  gap: 8%;
+  min-height: 400px;
+  padding-bottom: 180px;
+}
+.fivefunction-container-reverse {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 38% 54%;
+  gap: 8%;
+  min-height: 400px;
+  padding-bottom: 180px;
+  grid-template-areas: "item2 item1";
+}
+.fivefunction-container-reverse .item1 {
+  grid-area: item1;
+}
+
+.fivefunction-container-reverse .item2 {
+  grid-area: item2;
+}
+
+.fivefunction-containers {
+  width: min(1140px, 90%);
+}
+.fivefunction-containers > :last-child {
+  padding-bottom: 0px;
+}
+.grid-reverse {
+  grid-template-columns: 54% 38%;
+}
+.title-line-col::before {
+  content: "";
+  height: 91px;
+  border: 4px solid #2fc996;
+  position: absolute;
+}
+.title-sup {
+  top: -0.4em;
+  font-size: 36px;
+}
+.point4-sp {
+  display: none;
+}
+
+/*================================= 
+  example
+================================= */
+.sectionExample {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sectionExampleTitle::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 2px;
+  background: #00a99d;
+  position: absolute;
+  left: calc(50% - (10% / 2));
+  margin-top: 10px;
+}
+.example-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  max-width: 836px;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+/*================================= 
+  attention
+================================= */
+.sectionAttention {
+  height: auto;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.buttton-form {
+  min-width: 200px;
+}
+.btn-attention {
+  display: flex;
+  flex-direction: row;
+}
+
+/*================================= 
+  flow
+================================= */
+.sectionFlow {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sectionFlowTitle::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 2px;
+  background: #00a99d;
+  position: absolute;
+  left: calc(50% - (10% / 2));
+  margin-top: 10px;
+}
+.flow-sp {
+  display: none;
+}
+/*================================= 
+  plan
+================================= */
+.sectionPlanTitle::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 2px;
+  background: #00a99d;
+  position: absolute;
+  left: calc(50% - (10% / 2));
+  margin-top: 10px;
+}
+.attention-plan {
+  list-style-type: "※";
+  list-style-position: inside;
+  text-indent: -16px !important;
+  padding-left: 20px !important;
+  line-height: 1.8rem;
+}
+section[class*="section-py"] {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.section-content {
+  width: 100%;
+  padding: 0px 12%;
+}
+.sectionPlan {
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+li[class^="planbox"] {
+  width: 100%;
+  height: auto;
+  background: white;
+  padding: 20px 30px;
+  border-radius: 15px;
+  border: 4px solid;
+  box-sizing: border-box;
+  align-items: center;
+}
+li[class^="planbox"] h1 {
+  font-size: 30px;
+  letter-spacing: 8px;
+  font-weight: 500;
+  min-width: 225px;
+  padding-bottom: 10px;
+}
+li[class^="planbox"] .color3 {
+  padding: 0px 30px;
+}
+li[class^="planbox"] .amount {
+  font-size: 50px;
+  font-weight: 700;
+  align-self: center;
+}
+li[class^="planbox"] .yen {
+  font-weight: 700;
+  text-align: center;
+  font-size: 23px;
+  letter-spacing: 0.2rem;
+  align-self: center;
+  line-height: 25px;
+  padding-top: 10px;
+}
+li[class^="planbox"] .tax {
+  font-weight: 500;
+  font-size: 16px;
+}
+li[class*="color1"] {
+  color: #59b5d2;
+}
+li[class*="color2"] {
+  color: #9cbc3c;
+}
+p[class*="color3"] {
+  color: #000000;
+}
+.plan-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.icon-plan-price {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/*================================= 
+  Support
+================================= */
+.sectionSupport {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sectionSupportTitle::before {
+  content: "";
+  display: block;
+  width: 95px;
+  height: 4px;
+  background: #00a99d;
+  position: absolute;
+  left: -90px;
+  bottom: 43%;
+  transform: rotate(-111deg);
+}
+.sectionSupportTitle::after {
+  content: "";
+  display: block;
+  width: 95px;
+  height: 4px;
+  background: #00a99d;
+  position: absolute;
+  right: -90px;
+  bottom: 43%;
+  transform: rotate(111deg);
+}
+li[class^="supportbox"] {
+  width: 45%;
+  height: auto;
+  background: white;
+  padding: 40px 40px 50px 40px;
+  border-radius: 20px;
+  border: 8px solid;
+  box-sizing: border-box;
+}
+li[class^="supportbox"] h1 {
+  font-size: 25px;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  min-width: 320px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+li[class^="supportbox"] .color6 {
+  padding: 0px 30px;
+}
+
+li[class*="color4"] {
+  color: #ffbd7b;
+}
+li[class*="color4"] h1 {
+  color: #ff8102 !important;
+}
+li[class*="color5"] {
+  color: #83dcbf;
+}
+li[class*="color5"] h1 {
+  color: #0caf79 !important;
+}
+p[class*="color6"] {
+  color: #191919;
+}
+.support-deco {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  justify-content: space-between;
+  min-gap: 600px;
+}
+.support-image {
+  margin-top: -172px;
+  width: min(600px, 80%);
+}
+
+/* decoline1~3 */
+.decoline1 {
+  position: relative;
+  height: auto;
+}
+.decoline1::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  background: url("../image/deco_vcutline3.svg") no-repeat center top / 100%
+    auto;
+  aspect-ratio: 1 / 0.1;
+  bottom: 0;
+}
+.decoline2 {
+  position: relative;
+  height: auto;
+}
+.decoline2::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  background: url("../image/deco_vcutline3.svg") no-repeat center top / 100%
+    auto;
+  aspect-ratio: 1 / 0.1;
+  bottom: 0;
+}
+.decoline3 {
+  position: relative;
+  height: auto;
+}
+.decoline3::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  background: url("../image/deco_vcutline3.svg") no-repeat center top / 100%
+    auto;
+  aspect-ratio: 1 / 0.1;
+  bottom: 0;
+}
+
+/*================================= 
+  Faq
+================================= */
+.sectionFaq {
+  width: 100%;
+  background-image: url("../image/bgimg_faq_01.png");
+  height: auto;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+}
+.sectionFaqTitle::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 2px;
+  background: #000000;
+  position: absolute;
+  left: calc(50% - (10% / 2));
+  margin-top: 10px;
+}
+.section-content-tight {
+  width: 100%;
+  padding: 0px 25%;
+}
+
+.faq-container h1 {
+  font-size: 40px;
+  color: #204d47;
+  font-weight: 500;
+  margin-top: -31px;
+}
+.faq-container p {
+  font-size: 20px;
+  color: #204d47;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+/*================================= 
+  @media
+================================= */
+/* 最小768で */
+@media (min-width: 768px) {
+  a[href^="tel:"] {
+    pointer-events: none;
+  }
+}
+
+/*================================= 
+  mp4
+================================= */
+.video-container {
+  position: relative;
+  /* display: inline-block; */
+}
+.video-container video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* 本来なら-50％ー50％だが、動画の縦が小さいため上部を上げて違和感のない-55%まで引き上げた */
+  /* transform:translate(-50%, -50%); */
+  transform: translate(-50%, -55%);
+}
+.video_pc {
+  /* width: 742px;
+  height: 368px; */
+}
+.video {
+  /* width: 552px;
+  height: 353px; */
+  width: 80%;
+  /* -0.25％に関しては動画が左右対称処理でなかったので微調整した */
+  margin-left: -0.25%;
+}
+
+/* 最大768で */
+@media (max-width: 768px) {
+  .sectionHero {
+    background-image: url("../image/bgimg_hero_mo1.jpg");
+    width: 100%;
+    background-size: cover;
+    background-position: center bottom;
+  }
+  .sectionHero .title-big::after {
+    width: 100%;
+  }
+  .ico-hero {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .herotitle-pc {
+    display: none;
+  }
+  .herotitle-sp {
+    display: block;
+  }
+  .sectionHero-inner {
+    width: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .header-inner {
+    height: 96px;
+  }
+  .header-inner-nav {
+    display: none !important;
+  }
+  .hamburger-menu {
+    visibility: visible;
+    display: inline-flex;
+    vertical-align: center;
+  }
+  .side-nav {
+    display: none;
+    visibility: hidden;
+  }
+  .fivefunction-container {
+    grid-template-columns: 1fr;
+  }
+  .container-wide {
+    width: 100%;
+  }
+  .explain-pc {
+    display: none;
+  }
+  .explain-sp {
+    display: block;
+  }
+  .title-explain-sp {
+    display: block;
+    text-align: center;
+  }
+  .title-explain-pc {
+    display: none;
+  }
+  .example-box {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .btn-attention {
+    flex-direction: column;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .sectionAttention {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .flow-pc {
+    display: none;
+  }
+  .flow-sp {
+    display: block;
+  }
+  .point4-pc {
+    display: none;
+  }
+  .point4-sp {
+    display: block;
+  }
+  .plan-container li {
+    flex-direction: column;
+  }
+  li[class^="planbox"] h1 {
+    align-self: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-plan-price {
+    top: -8px;
+    right: 20px;
+  }
+  .a-shadow {
+    width: clamp(200px, 450px, 90%);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mobilenav-box-telnumber {
+    font-size: clamp(29px, 25px, 90%);
+  }
+  /* mp4 */
+  .video_pc {
+    /* width: 80%; */
+    height: auto;
+  }
+  .video {
+    /* width: 60%; */
+    height: auto;
+  }
+}
+
+@media (max-width: 1100px) {
+  .container-tight ul li {
+    font-size: 16px;
+    text-indent: -20px !important;
+    padding-left: 20px !important;
+  }
+  .container-tight h2 {
+    font-size: 26px;
+  }
+}
