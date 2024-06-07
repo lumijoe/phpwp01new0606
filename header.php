@@ -19,8 +19,8 @@
     <!-- css/functions.php-->
     <!-- <link rel="stylesheet" href="./style.css"> -->
     <!-- js -->
-    <script src="https://cdn.tailwindcss.com"></script> 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
     <!-- Font,Icon -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

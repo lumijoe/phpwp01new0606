@@ -55,7 +55,7 @@ get_header();
     <!-- ご用件 -->
     <h2>ご用件</h2>
     <div class="required-label">必須</div>
-    <div class="flex-row">
+    <div class=" flex flex-row">
         <label class="inline-flex">
             <input type="radio" class="form-radio" name="radio-option" value="option1">
             <span class="ml-2">資料請求を希望</span>
