@@ -49,7 +49,6 @@ get_header();
     <br>
 </section>
 <!-- Form -->
-<?php echo do_shortcode('[contact-form-7 id="c8223bd" title="コンタクトフォームテスト2"]'); ?>
 <?php echo do_shortcode('[contact-form-7 id="1917c30" title="コンタクトフォームテスト"]'); ?>
 <section class="contactform-grid flex flex-col"> 
     <!-- ご用件 -->
