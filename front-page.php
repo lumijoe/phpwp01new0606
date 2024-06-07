@@ -14,23 +14,6 @@
             </div>  
         </div>
     </section>
-    <br>
-    <br>
-    <p>test</p>
-    <hr>
-    <!-- section -->
-    <section class="sectionHero2">
-        <div class="sectionHero-inner">
-            <h1 class="title-big herotitle-sp text-green">事業向けAIアシスタントで革命を</h1>
-            <h1 class="title-big herotitle-pc text-green">事業向けAIアシスタントで革命を</h1>
-            <p class="pt-[10px] text-mostgreen leading-[40px] pr-6 max-md:pl-6">〇〇を利用してAmazonなど、情報の安全性を確保しつつ、最新のAIテクノロジーを誰でも簡単に利用できる豊富な機能を提供。あらゆるシーンで、あなたの事業を強力にサポートします。</p>
-            <img src="/wp-content/uploads/2024/05/ico_hero_010203.png" alt="" class=" h-auto text-center py-[40px] ico-hero">
-            <div class="flex flex-row max-md:flex-col max-md:items-center gap-[30px]">
-                <a href="<?php echo home_url(); ?>/contact/" target="_blank" rel="noopener noreferrer"><img src="/wp-content/uploads/2024/05/btn_service_rounded.png" alt="" class="a-shadow max-md:w-[90%]"></a>
-                <a href="<?php echo home_url(); ?>/contact/"><img src="/wp-content/uploads/2024/05/btn_trial_rounded.png" alt="" class="a-shadow max-md:w-[90%]"></a>
-            </div>  
-        </div>
-    </section>
 
         <!------------------------------- 
             sidenav
@@ -41,7 +24,7 @@
             </a>
             <!-- ２倍書き出しで綺麗に描画させる -->
             <a href="<?php echo home_url(); ?>/contact/" target="_blank" rel="noopener noreferrer" >
-                <img src="/wp-content/uploads/2024/05/btn_trial_side1.png" alt="" class="w-[81px] h-[174px] aside-shadow ml-[11%] overflow-x-hidden mt-[20px]">
+                <img src="/wp-content/uploads/2024/05/btn_trial_side.png" alt="" class="w-[81px] h-[174px] aside-shadow ml-[11%] overflow-x-hidden mt-[20px]">
             </a>
         </div>
 
@@ -150,18 +133,18 @@
                 </p>
                     
                     <div class="container-wide item1 bg-pink-400 py-10"><div class="video-container">
-                        <img src="/wp-content/uploads/2024/05/img_notepc.png" alt="" class="video_pc">
+                        <img src="/wp-content/uploads/2024/06/img_notepc.png" alt="" class="video_pc">
                      
-                        <video width="552" height="353" controls autoplay loop muted poster="/wp-content/uploads/2024/05/v_scenario_poster.png" class="video">
-                            <source src="/wp-content/uploads/2024/05/v_scenario.mp4" type="video/mp4" >
+                        <video width="552" height="353" controls autoplay loop muted poster="/wp-content/uploads/2024/06/v_scenario_poster.png" class="video">
+                            <source src="/wp-content/uploads/2024/06/v_scenario.mp4" type="video/mp4" >
                           </video>
                         </div> 
                     </div>
                     <div class="container-wide item1"><div class="video-container">
                         <img src="/wp-content/uploads/2024/05/img_function5_01.png" alt="" class="video_pc">
                      
-                        <video width="552" height="353" controls autoplay loop muted poster="./image/v_scenario_poster.png" class="video">
-                            <source src="./image/v_scenario.mp4" type="video/mp4" >
+                        <video width="552" height="353" controls autoplay loop muted poster="/wp-content/uploads/2024/06/v_scenario_poster.png" class="video">
+                            <source src="/wp-content/uploads/2024/06/v_scenario.mp4" type="video/mp4" >
                           </video>
                         </div> 
                     </div>
@@ -240,8 +223,8 @@
                     </div>
                     <div class="container-wide">
                         <div class="">
-                            <video width="100%" height="auto" controls autoplay loop muted poster="/wp-content/uploads/2024/05/v_assistantapi_poster.png" class="video">
-                                <source src="/wp-content/uploads/2024/05/v_assistantapi.mp4" type="video/mp4" >
+                            <video width="100%" height="auto" controls autoplay loop muted poster="/wp-content/uploads/2024/06/v_assistantapi_poster.png" class="video">
+                                <source src="/wp-content/uploads/2024/06/v_assistantapi.mp4" type="video/mp4" >
                             </video>
                         </div>
                     </div>

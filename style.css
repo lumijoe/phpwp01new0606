@@ -117,16 +117,9 @@ body {
 ================================= */
 
 .sectionHero {
-  background-image: url("../image/bgimg_hero_pc.jpg");
+  background-image: url("/wp-content/uploads/2024/05/bgimg_hero_pc.jpg");
   width: 100%;
   height: 964px;
-  background-size: cover;
-  background-position: right bottom;
-  overflow: hidden;
-}
-.sectionHero2 {
-  width: 100%;
-  height: 100vh;
   background-size: cover;
   background-position: right bottom;
   overflow: hidden;
@@ -786,7 +779,7 @@ p[class*="color6"] {
 /* 最大768で */
 @media (max-width: 768px) {
   .sectionHero {
-    background-image: url("../image/bgimg_hero_mo1.jpg");
+    background-image: url("/wp-content/uploads/2024/05/bgimg_hero_mo.jpg");
     width: 100%;
     background-size: cover;
     background-position: center bottom;

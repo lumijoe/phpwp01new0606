@@ -19,6 +19,9 @@ function add_files() {
     if (is_page_template('contact.php')) {
         wp_enqueue_style('contact-style', get_template_directory_uri() . '/contact.css');
     }
+
+    // js/script.jsを読み込ませる
+    wp_enqueue_script('main-script', get_template_directory_uri() . '/js/script.js', array(), '1.0.0', true);
 }
 // 追加したファイルを呼び出す
 add_action('wp_enqueue_scripts', 'add_files');
