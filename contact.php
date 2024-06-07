@@ -4,6 +4,7 @@ Template Name: Contact Page
 */
 get_header();
 ?>
+<?php echo do_shortcode('[contact-form-7 id="c8223bd" title="コンタクトフォームテスト2"]'); ?>
 <section>
     <div class="contact_header brandcolor_bg">
         <div>
@@ -48,6 +49,7 @@ get_header();
     <br>
 </section>
 <!-- Form -->
+<?php echo do_shortcode('[contact-form-7 id="c8223bd" title="コンタクトフォームテスト2"]'); ?>
 <?php echo do_shortcode('[contact-form-7 id="1917c30" title="コンタクトフォームテスト"]'); ?>
 <section class="contactform-grid flex flex-col"> 
     <!-- ご用件 -->
@@ -67,10 +69,10 @@ get_header();
             <span class="ml-2">その他</span>
         </label>
     </div>
-    <!-- 会社名 -->
-    <h2>会社名</h2>
-    <div class="required-label">必須</div>
-    <input type="text" class="border border-gray-300 p-2 rounded-md input-text-width" placeholder="例：株式会社システムサポート" id="company">
+    <!-- 会社名 -->
+		<h2>会社名</h2>
+		<div class="required-label">必須</div>
+    	<input type="text" class="border border-gray-300 p-2 rounded-md input-text-width" placeholder="例：株式会社システムサポート" id="company">
     <!-- 氏名 -->
     <h2>氏名</h2>
     <div class="required-label">必須</div>
