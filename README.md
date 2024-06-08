@@ -126,3 +126,6 @@ wp_enqueue_style('main-style', get_stylesheet_uri());
 }
 // 追加したファイルを呼び出す
 add_action('wp_enqueue_scripts', 'add_files');などと書く
+
+## contact form7ではsmtp設定がうまくいかず
+SMTP設定がうまくいかずに、Formプラグインを変更することも検討
