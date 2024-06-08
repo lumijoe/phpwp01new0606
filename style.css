@@ -759,6 +759,14 @@ p[class*="color6"] {
   letter-spacing: -0.025em;
   font-weight: 600;
 }
+.copy {
+  background-color: #30554c;
+  height: 113px;
+  padding-bottom: 60px;
+  color: white;
+  text-align: center;
+  align-content: center;
+}
 
 /*================================= 
   @media
