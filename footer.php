@@ -1,7 +1,8 @@
 </main>
     <!-- footer -->
     <footer>
-        <div class="bg-[#F2F2F2] w-[100%] pb-[30px] px-[15%] tracking-wider text-[#30554C]">
+        <div class="footer-container">
+        <!-- <div class="bg-[#F2F2F2] w-[100%] pb-[30px] px-[15%] tracking-wider text-[#30554C]"> -->
             <h1 class="text-2xl pb-4 tracking-tight font-semibold">株式会社テストサイト</h1>
             <table>
                 <tr>
