@@ -50,8 +50,7 @@ get_header();
 </section>
 <!-- Form -->
 <?php echo do_shortcode('[contact-form-7 id="1917c30" title="コンタクトフォームテスト"]'); ?>
-<section class="contactform-grid flex flex-col"> 
-    <!-- ご用件 -->
+<section class="contactform-grid flex flex-col">     
     <h2>ご用件</h2>
     <div class="required-label">必須</div>
     <div class="flex-row">
@@ -68,28 +67,25 @@ get_header();
             <span class="ml-2">その他</span>
         </label>
     </div>
-    <!-- 会社名 -->
-		<h2>会社名</h2>
-		<div class="required-label">必須</div>
-    	<input type="text" class="border border-gray-300 p-2 rounded-md input-text-width" placeholder="例：株式会社システムサポート" id="company">
-    <!-- 氏名 -->
+    <h2>会社名</h2>
+    <div class="required-label">必須</div>
+    <input type="text" class="border border-gray-300 p-2 rounded-md input-text-width" placeholder="例：株式会社システムサポート" id="company">
+    
     <h2>氏名</h2>
     <div class="required-label">必須</div>
     <input type="text" class="border border-gray-300 p-2 rounded-md input-text-width" placeholder="例：シス田 サポ郎" id="name">
-    <!-- メールアドレス -->
+    
     <h2>メールアドレス</h2>
     <div class="required-label">必須</div>
     <input type="text" class="border border-gray-300 p-2 rounded-md input-text-width" placeholder="例：×××＠×××.com" id="email">
-    <!-- 電話番号 -->
+    
     <h2>電話番号</h2>
     <div class="required-label">必須</div>
     <input type="text" class="border border-gray-300 p-2 rounded-md input-text-width" placeholder="例：03-3342-9620" id="phone">
-    <!-- お申し込み内容 -->
+    
     <h2>お申し込み内容</h2>
     <div></div> <!-- 空のセル -->
     <textarea class="border border-gray-300 p-2 rounded-md inputarea-text-width" placeholder="お聞きしたい事などがあればご記入ください。" id="details"></textarea>
-    <!-- id result -->
-    <div id="result"></div>
 </section>
 <!-- 同意 -->
 <section class="flex flex-col align-center justify-center content-center flex-wrap py-20">
