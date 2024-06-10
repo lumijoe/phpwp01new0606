@@ -1,0 +1,569 @@
+element.style {
+}
+.c-breadcrumbs + .l-main__block {
+  padding-top: 5rem;
+}
+
+.l-main__block {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+*,
+:after,
+:before {
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+}
+user agent stylesheet section {
+  display: block;
+  unicode-bidi: isolate;
+}
+element.style {
+}
+@media (min-width: 992px) {
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1100px;
+  }
+}
+@media (min-width: 768px) {
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 840px;
+  }
+}
+@media (min-width: 576px) {
+  .container-sm,
+  .container {
+    max-width: 720px;
+  }
+}
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm {
+  --bs-gutter-x: 2rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+*,
+:after,
+:before {
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+}
+user agent stylesheet div {
+  display: block;
+  unicode-bidi: isolate;
+}
+.p-contact__form {
+  max-width: 80rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+*,
+:after,
+:before {
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+}
+user agent stylesheet div {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+.c-form__box:first-child {
+  border-top: 1px dashed #707070;
+}
+.c-form__box {
+  margin-bottom: 0;
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 4.5rem;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  border-bottom: 1px dashed #707070;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, YuGothic,
+    ヒラギノ角ゴ ProN W3, Hiragino Kaku Gothic ProN, Arial, メイリオ, Meiryo,
+    sans-serif;
+}
+dl,
+dt,
+dd {
+  margin-bottom: 0;
+}
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+*,
+:after,
+:before {
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+}
+user agent stylesheet dl {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+.c-form__label {
+  width: 24rem;
+  padding-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+dl,
+dt,
+dd {
+  margin-bottom: 0;
+}
+dt {
+  font-weight: 700;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+*,
+:after,
+:before {
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+}
+user agent stylesheet dt {
+  display: block;
+  unicode-bidi: isolate;
+}
+.c-form__required {
+  width: 6rem;
+  margin-left: auto;
+  border-radius: 0.7rem;
+  background-color: #ff4040;
+  color: #fff;
+  text-align: center;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+*,
+:after,
+:before {
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+}
+dt {
+  font-weight: 700;
+}
+.c-form__box {
+  margin-bottom: 0;
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 4.5rem;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  border-bottom: 1px dashed #707070;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, YuGothic,
+    ヒラギノ角ゴ ProN W3, Hiragino Kaku Gothic ProN, Arial, メイリオ, Meiryo,
+    sans-serif;
+}
+.c-form__label {
+  width: 24rem;
+  padding-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+dl,
+dt,
+dd {
+  margin-bottom: 0;
+}
+dt {
+  font-weight: 700;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+*,
+:after,
+:before {
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+}
+user agent stylesheet dt {
+  display: block;
+  unicode-bidi: isolate;
+}
+.c-form__box {
+  margin-bottom: 0;
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 4.5rem;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  border-bottom: 1px dashed #707070;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, YuGothic,
+    ヒラギノ角ゴ ProN W3, Hiragino Kaku Gothic ProN, Arial, メイリオ, Meiryo,
+    sans-serif;
+}
+.c-form__box dd {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  font-size: 1.6rem;
+}
+dl,
+dt,
+dd {
+  margin-bottom: 0;
+}
+dd {
+  margin-bottom: 0.5rem;
+  margin-left: 0;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+*,
+:after,
+:before {
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+}
+user agent stylesheet dd {
+  display: block;
+  margin-inline-start: 40px;
+  unicode-bidi: isolate;
+}
+.c-form__control {
+  width: 100%;
+  padding: 0.75em 1.25em;
+  border: 1px solid #707070;
+  border-radius: 1rem;
+  background-color: #fff;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+button,
+input,
+select,
+textarea {
+  background-color: transparent;
+  border-style: none;
+  color: inherit;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+}
+input {
+  border-radius: 0;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+*,
+:after,
+:before {
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+}
+user agent stylesheet input[type="text" i] {
+  padding-block: 1px;
+  padding-inline: 2px;
+}
+user
+  agent
+  stylesheet
+  input:not(
+    [type="file" i],
+    [type="image" i],
+    [type="checkbox" i],
+    [type="radio" i]
+  ) {
+}
+.c-form__box:first-child {
+  border-top: 1px dashed #707070;
+}
+.c-form__box {
+  margin-bottom: 0;
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 4.5rem;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  border-bottom: 1px dashed #707070;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, YuGothic,
+    ヒラギノ角ゴ ProN W3, Hiragino Kaku Gothic ProN, Arial, メイリオ, Meiryo,
+    sans-serif;
+}
+.c-form__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+*,
+:after,
+:before {
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+}
+user agent stylesheet div {
+  display: block;
+  unicode-bidi: isolate;
+}
+.c-form__column .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+*,
+:after,
+:before {
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+}
+user agent stylesheet div {
+  display: block;
+  unicode-bidi: isolate;
+}
+.c-form__box dd {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  font-size: 1.6rem;
+}
+.c-form__select {
+  padding-right: 4.8rem;
+  background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%228%22%3E%20%3Cpath%20fill%3D%22%23444%22%20d%3D%22M8%208%200%200h16Z%22%2F%3E%3C%2Fsvg%3E);
+  background-position: right 1.6rem center;
+  background-size: 1.6rem;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.c-form__control {
+  width: 100%;
+  padding: 0.75em 1.25em;
+  border: 1px solid #707070;
+  border-radius: 1rem;
+  background-color: #fff;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+select {
+  word-wrap: normal;
+}
+button,
+select {
+  text-transform: none;
+}
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+button,
+input,
+select,
+textarea {
+  background-color: transparent;
+  border-style: none;
+  color: inherit;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+}
+.c-form__select {
+  padding-right: 4.8rem;
+  background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%228%22%3E%20%3Cpath%20fill%3D%22%23444%22%20d%3D%22M8%208%200%200h16Z%22%2F%3E%3C%2Fsvg%3E);
+  background-position: right 1.6rem center;
+  background-size: 1.6rem;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.c-form__control {
+  width: 100%;
+  padding: 0.75em 1.25em;
+  border: 1px solid #707070;
+  border-radius: 1rem;
+  background-color: #fff;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}

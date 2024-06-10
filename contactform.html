@@ -1,0 +1,31 @@
+
+<section class="contactform-grid flex flex-col"> 
+    <!-- ご用件 -->
+    <h2>ご用件</h2>
+    <div class="required-label">必須</div>
+    <div class="flex-row">
+        [radio your-subject use_label_element default:1 "資料請求を希望" "無料トライアルを希望" "その他"]
+    </div>
+    <!-- 会社名 -->
+		<h2>会社名</h2>
+		<div class="required-label">必須</div>
+    	[text* your-company placeholder "例：株式会社システムサポート"]
+    <!-- 氏名 -->
+    <h2>氏名</h2>
+    <div class="required-label">必須</div>
+    [text* your-name placeholder "例：シス田サポ郎"]
+    <!-- メールアドレス -->
+    <h2>メールアドレス</h2>
+    <div class="required-label">必須</div>
+    [email* your-email placeholder "例：xxx@xxx.com"]
+    <!-- 電話番号 -->
+    <h2>電話番号</h2>
+    <div class="required-label">必須</div>
+    [tel* your-tel placeholder "例：03-xxxx-xxxx"]
+    <!-- お申し込み内容 -->
+    <h2>お申し込み内容</h2>
+    <div></div> <!-- 空のセル -->
+    [textarea your-message placeholder "お聞きしたい事などがあればご記入ください。"]
+    <!-- id result -->
+    <div id="result"></div>
+</section>
