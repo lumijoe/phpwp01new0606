@@ -1,10 +1,9 @@
-<?php
+
 /*
 Template Name: Contact Page
 */
 get_header();
 ?>
-<?php echo do_shortcode('[contact-form-7 id="c8223bd" title="コンタクトフォームテスト2"]'); ?>
 <section>
     <div class="contact_header brandcolor_bg">
         <div>
@@ -50,53 +49,4 @@ get_header();
 </section>
 <!-- Form -->
 <?php echo do_shortcode('[contact-form-7 id="1917c30" title="コンタクトフォームテスト"]'); ?>
-<section class="contactform-grid flex flex-col">     
-    <h2>ご用件</h2>
-    <div class="required-label">必須</div>
-    <div class="flex-row">
-        <label class="inline-flex">
-            <input type="radio" class="form-radio" name="radio-option" value="option1">
-            <span class="ml-2">資料請求を希望</span>
-        </label>
-        <label class="inline-flex">
-            <input type="radio" class="form-radio" name="radio-option" value="option2">
-            <span class="ml-2">無料トライアルを希望</span>
-        </label>
-        <label class="inline-flex">
-            <input type="radio" class="form-radio" name="radio-option" value="option3">
-            <span class="ml-2">その他</span>
-        </label>
-    </div>
-    <h2>会社名</h2>
-    <div class="required-label">必須</div>
-    <input type="text" class="border border-gray-300 p-2 rounded-md input-text-width" placeholder="例：株式会社システムサポート" id="company">
-    
-    <h2>氏名</h2>
-    <div class="required-label">必須</div>
-    <input type="text" class="border border-gray-300 p-2 rounded-md input-text-width" placeholder="例：シス田 サポ郎" id="name">
-    
-    <h2>メールアドレス</h2>
-    <div class="required-label">必須</div>
-    <input type="text" class="border border-gray-300 p-2 rounded-md input-text-width" placeholder="例：×××＠×××.com" id="email">
-    
-    <h2>電話番号</h2>
-    <div class="required-label">必須</div>
-    <input type="text" class="border border-gray-300 p-2 rounded-md input-text-width" placeholder="例：03-3342-9620" id="phone">
-    
-    <h2>お申し込み内容</h2>
-    <div></div> <!-- 空のセル -->
-    <textarea class="border border-gray-300 p-2 rounded-md inputarea-text-width" placeholder="お聞きしたい事などがあればご記入ください。" id="details"></textarea>
-</section>
-<!-- 同意 -->
-<section class="flex flex-col align-center justify-center content-center flex-wrap py-20">
-    <div class="flex flex-row gap-[20px] justify-between w-[380px]">
-        <a href="http://" target="_blank" rel="noopener noreferrer" class="about">個人情報保護方針</a>
-        <a href="http://" target="_blank" rel="noopener noreferrer" class="about">個人情報の取扱について</a>
-    </div>
-    <label class="inline-flex justify-evenly">
-        <input type="checkbox" class="form-radio ml-[30px] " name="radio-option" value="option1" onchange="toggleSubmitButton(this)">
-        <span class="ml-[-1rem] consent text-[21px] py-4">個人情報保護方針に同意する</span>
-    </label>
-    <button type="button" id="submitBtn" class="mx-auto"><img src="/wp-content/uploads/2024/06/btn_to_confirm.png" alt="" class="to-confirm"></button>
-</section>
 <?php get_footer(); ?>
